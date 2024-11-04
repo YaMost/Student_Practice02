@@ -1,0 +1,48 @@
+﻿<Window x:Class="MiningMinerals.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiningMinerals"
+        mc:Ignorable="d"
+        Title="Mining Minerals" Height="500" Width="840"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Background="#375b9e">
+        <DataGrid x:Name="DataGridMinerals" HorizontalAlignment="Left" Height="314" Margin="171,10,0,0" VerticalAlignment="Top" 
+                  Width="649" 
+                  d:ItemsSource="{d:Binding Source=}" CanUserReorderColumns="False" ColumnWidth="*"/>
+        <RadioButton x:Name="RadioBtnMinerals" 
+                     Content="Икопаемые" 
+                     HorizontalAlignment="Left"
+                     Margin="5,109,0,0" 
+                     VerticalAlignment="Top" 
+                     Width="145" 
+                     Height="28" 
+                     Foreground="White" 
+                     FontSize="20" IsChecked="True" Checked="RadioBtnMinerals_Checked"/>
+        <RadioButton x:Name="RadioBtnMining" 
+                     Content="Добыча" 
+                     HorizontalAlignment="Left" 
+                     Margin="5,146,0,0" 
+                     VerticalAlignment="Top"
+                     Foreground="White" 
+                     FontSize="20" 
+                     Width="115" IsChecked="False" Checked="RadioBtnMining_Checked" />
+        <RadioButton x:Name="RadioBtnTransit" 
+                     Content="Транзит" 
+                     HorizontalAlignment="Left" 
+                     Margin="4,185,0,0" 
+                     VerticalAlignment="Top" 
+                     Foreground="White" 
+                     FontSize="20"
+                     Width="115" IsChecked="False" Checked="RadioBtnTransit_Checked" />
+        <RadioButton x:Name="Query1" Content="Запрос 1" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="173,423,0,0" VerticalAlignment="Top" Checked="Query1_Checked"/>
+        <RadioButton x:Name="Query2" Content="Запрос 2" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="318,422,0,0" VerticalAlignment="Top" Checked="Query2_Checked"/>
+        <RadioButton x:Name="Query3" Content="Запрос 3" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="467,422,0,0" VerticalAlignment="Top" Checked="Query3_Checked"/>
+        <RadioButton x:Name="Query4" Content="Запрос 4" Foreground="White" FontSize="18" HorizontalAlignment="Left" Margin="630,422,0,0" VerticalAlignment="Top" Checked="Query4_Checked"/>
+
+
+    </Grid>
+</Window>
